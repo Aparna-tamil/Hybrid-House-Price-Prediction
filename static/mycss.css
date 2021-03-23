@@ -1,0 +1,108 @@
+
+body  {
+    background-image: url("/static/1.jfif");
+
+}
+.background{
+background: url("1.jfif");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 200px;
+    opacity: .4;
+    border-radius: 40px;
+}
+.background:hover{
+
+
+    height: 200px;
+    opacity: .4;
+    border-radius: 40px;
+}
+.text1{
+    font-family:Sans-serif;
+    text-align:center;
+     padding-top: 30px;
+    opacity: 1;
+    text-shadow: 2px 2px 2px blue; 
+}
+.text1:hover{
+    font-family:Sans-serif;
+    text-align:center;
+    color: aquamarine;
+     padding-top: 30px;
+    opacity: 1;
+    text-shadow: 2px 2px 2px blue; 
+}
+#header{
+    text-align-last:right;
+    padding: 5px;
+    margin-right: 30px;
+}
+.paragraph1{
+    font-family: Monospace;
+    font-size: 25px;
+    color: #696969;
+}
+.paragraph1:hover{
+    font-family: Monospace;
+    color: black;
+}
+.paragraph2{
+    font-family: Monospace;
+    font-size: 25px;
+    color: #696969;
+}
+.paragraph2:hover{
+    font-family: Monospace;
+    color: black;
+}
+.form{
+   text-align: center;
+    font-family: Sans-serif;
+    padding: 5px;
+    border-radius: 40px;
+    color: white;
+
+}
+.form:hover{
+   text-align: center;
+
+    font-family: Sans-serif;
+    padding: 5px;
+    border-radius: 40px;
+}
+input{
+    width: 150px;
+    border-radius: 20px;
+    text-align: center;
+    background: #e1d9c7;
+ transition: width 0.4s ease-in-out;
+}
+input:focus{
+    width:200px;
+
+}
+
+.select_label{
+    padding: 5px;
+    margin-bottom: 5px;
+    
+}
+ select{
+    padding: 5px;
+    margin-bottom: 5px;
+    color: darkgreen;
+    border-radius: 20px;
+}
+#submitbtn{
+font-family:im_fell_englishregular;
+    border-radius: 20px;
+   background-color: #e1d9c7;
+    }
+#submitbtn:hover{
+        font-size: 20px;
+        color: #002366;
+
+    }
