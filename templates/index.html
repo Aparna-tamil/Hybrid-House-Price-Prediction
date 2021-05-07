@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="./static/mycss.css", media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="./static/mycss2.css", media="screen,projection"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div>
+            <div class="background">
+                <div class="text1">
+                    <h1>WELCOME TO ML HOUSE PRICE PREDICTION</h1>
+                </div>
+            </div>
+           
+
+                <div id=result>
+
+                 <p> {{pred}}</p>
+                </div>
+
+               
+		 <div class=form>
+                    
+                    <form action="/predict" method="post">
+                        <label class='select_label'>Which type of  house do you want ? </label>
+                        
+                        <Select id='four_story' name='four_story'>
+                        <option value='1'>Apartment</option>
+                        <option selected value="0" >Separate house</option>
+                        </Select><br><br>
+
+                        <label class='select_label'>Distance between house and mainroad ? </label>
+                    
+                        <Select id='one_story' name='one_story'>
+                        <option value='1'>within 15 km</option>
+                        <option selected value="0" >over 15 km</option>
+                        </Select><br><br>
+
+                        <label class='select_label'>Do you want to buy or rent the house ? </label>
+                    
+                        <Select id='three_story' name='three_story'>
+                        <option value='1'>Buy</option>
+                        <option selected value="0" >Rent</option>
+                        </Select><br><br>
+
+                        <label class='select_label'>Do you want maintainance? </label>
+                    
+                        <Select id='two_story' name='two_story'>
+                        <option value='1'>Yes</option>
+                        <option selected value="0" >No</option>
+                        </Select><br><br>
+
+                        
+                        <label>Lotsize (in square feet):</label><br>
+                        <input type="number" placeholder="Enter Lotsize here" id='lotsize' name='lotsize' required><br><br>
+                        
+                        
+                        
+                        <label>Number of Bedrooms :</label><br>
+                        <input type="number" placeholder="No. of Bedrooms" id='bedrooms' name='bedrooms' required><br><br>
+                        
+                        <label>Number of Bathrooms :</label><br>
+                        <input type="number" placeholder="No. of Bathrooms" id='bathrooms' name='bathrooms' required><br><br>
+                        
+                        <label class='select_label'>Which build type do you want? </label>
+
+                        <Select id='driveway' name='driveway'>
+                        <option value='1'>Living house</option>
+                        <option selected value="0" >Commercial (Restaurant/showroom)</option>
+                        </Select><br><br> 
+                    
+                    
+                        <label class='select_label'>Which type of housing do you prefer ? </label>
+
+                        <Select id='recroom' name='recroom'>
+                        <option value='1'>Budget friendly</option>
+                        <option selected value="0" >Luxurious house</option>
+                        </Select><br><br>
+                        
+                        
+                        <label class='select_label'>What about BHK ?</label>
+
+                        <Select id='fullbase' name='fullbase'>
+                        <option value='1'>2 bhk</option>
+                        <option selected value="0" >2+ bhk</option>
+                        </Select><br> <br>
+                        
+                        
+                        <label class='select_label'>Want about driveway , want one?</label>
+
+                        <Select id='gashw' name='gashw'>
+                        <option value='1'>Yes</option>
+                        <option selected value="0" >No</option>
+                        </Select><br><br>
+                        
+                        
+                        <label class='select_label'>Do you want air conditioning?</label>
+                        <Select id='airco' name='airco'>
+                        <option value='1'>Yes</option>
+                        <option selected value="0" >No</option>
+                        </Select><br><br>
+                        
+                        
+                        <label>Number of Garage Places :</label>
+                        <input type="number" placeholder="No. of Garage places" id='garpl' name='garpl' required><br><br>
+                        
+                    
+                        <label class='select_label'>On which date do you want to move to the house ?</label>
+
+                        <Select id='prefarea' name='prefarea'>
+                        <option value='1'>Immediately</option>
+                        <option selected value="0" >After a month</option>
+                        </Select><br><br>
+                    
+
+                            
+                    <button id=submitbtn type="submit" value="Submit">Predict</button><br>
+
+                    </form>
+
+</div>
+</div>
+</body>
+    
+    
+</html>
