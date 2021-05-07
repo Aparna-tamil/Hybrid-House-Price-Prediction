@@ -1,36 +1,35 @@
-
 body  {
-    background-image: url("/static/1.jfif");
+     background-image: url("1.jfif");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     font-size: 1.4rem;
+     color:white;
 
 }
 .background{
-background: url("1.jfif");
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-height: 200px;
-    opacity: .4;
+    height: 140px;
     border-radius: 40px;
 }
-.background:hover{
+/*.background:hover{
 
 
     height: 200px;
     opacity: .4;
     border-radius: 40px;
-}
+}*/
 .text1{
-    font-family:Sans-serif;
+    font-family: 'Vollkorn SC', serif;
+    font-size:1.6rem;
     text-align:center;
      padding-top: 30px;
     opacity: 1;
     text-shadow: 2px 2px 2px blue; 
 }
 .text1:hover{
-    font-family:Sans-serif;
+    font-family: 'Vollkorn SC', serif;
+    font-size:1.6rem;
     text-align:center;
-    color: aquamarine;
      padding-top: 30px;
     opacity: 1;
     text-shadow: 2px 2px 2px blue; 
@@ -60,28 +59,30 @@ height: 200px;
 }
 .form{
    text-align: center;
-    font-family: Sans-serif;
+   font-family: 'Prata', serif;
     padding: 5px;
     border-radius: 40px;
     color: white;
+    font-weight:bold;
 
 }
 .form:hover{
    text-align: center;
-
-    font-family: Sans-serif;
+   font-family: 'Prata', serif;
     padding: 5px;
     border-radius: 40px;
+   font-weight:bold;
 }
 input{
     width: 150px;
-    border-radius: 20px;
+    height: 1.8rem;
+    border-radius: 5px;
     text-align: center;
     background: #e1d9c7;
  transition: width 0.4s ease-in-out;
 }
 input:focus{
-    width:200px;
+    width:170px;
 
 }
 
@@ -97,12 +98,17 @@ input:focus{
     border-radius: 20px;
 }
 #submitbtn{
-font-family:im_fell_englishregular;
-    border-radius: 20px;
-   background-color: #e1d9c7;
+    width: 150px;
+    height: 2.5rem;
+    font-size:1rem;
+    border-radius: 5px;
+    text-align: center;
+    background: #e1d9c7;
+    transition: width 0.4s ease-in-out;
     }
 #submitbtn:hover{
-        font-size: 20px;
-        color: #002366;
+        width:170px;
+        font-size:1.3rem;
 
     }
+
